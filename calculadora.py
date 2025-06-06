@@ -3,6 +3,9 @@ def soma(a, b):
 
 def subtracao(a, b):
     return a - b
+    
+def multiplicacao(a, b):
+    return a * b
 
 if __name__ == "__main__":
     print("--- Calculadora Simples ---")
@@ -10,12 +13,14 @@ if __name__ == "__main__":
     try:
         num1 = float(input("Digite o primeiro número: "))
         num2 = float(input("Digite o segundo número: "))
-        operador = input("Digite o operador (+, -): ")
+        operador = input("Digite o operador (+, -, *): ")
 
         if operador == '+':
             resultado = soma(num1, num2)
         elif operador == '-':
             resultado = subtracao(num1, num2)
+        elif operador == "*":
+            resultado = multiplicacao(num1, num2)
         else:
             resultado = "Operador inválido."
 
