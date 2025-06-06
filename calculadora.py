@@ -17,6 +17,7 @@ if __name__ == "__main__":
         num1 = float(input("Digite o primeiro número: "))
         num2 = float(input("Digite o segundo número: "))
         operador = input("Digite o operador (+, -, *, /): ")
+        # Aqui é um comentário
 
         if operador == '+':
             resultado = soma(num1, num2)
